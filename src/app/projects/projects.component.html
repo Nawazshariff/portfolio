@@ -1,0 +1,12 @@
+<section id="section-project">
+  <h1>My Projects</h1>
+  <div class="project-cards">
+    <div class="project-card" *ngFor="let project of projectsArr">
+      <img src="../../assets/img/github.png" alt="github projects">
+      <h5>{{project.name}}</h5>
+      <p>{{project.description}}</p>
+      <p>To checkout the repo <span><a href="{{project.url}}" target="_blank">Click Here</a></span>
+      </p>
+    </div>
+  </div>
+</section>

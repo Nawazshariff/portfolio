@@ -1,0 +1,49 @@
+#section-project{
+    margin-top:10px;
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom:30px;
+    }
+    .project{
+        &-cards{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        &-card{
+            width: 25%;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 10%;
+            margin-right: 10px;
+            padding: 10px;
+            transition: padding-right 0.5s;
+            margin-bottom: 10px;
+            img{
+                width: 50%;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        &-card:hover{
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width:600px){
+    #section-project{
+        .project{
+            &-cards{
+                display: block;
+            }
+            &-card{
+                width: 100%;
+            }
+        }
+    }
+}
